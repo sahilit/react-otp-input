@@ -88,7 +88,7 @@ class SingleOtpInput extends PureComponent<*> {
     return (
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <input
-          autoComplete="off"
+          autoComplete="new-password"
           style={Object.assign(
             { width: '1em', textAlign: 'center' },
             isStyleObject(inputStyle) && inputStyle,
@@ -122,7 +122,7 @@ class OtpInput extends Component<Props, State> {
     numInputs: 4,
     onChange: (otp: number): void => console.log(otp),
     isDisabled: false,
-    shouldAutoFocus: false,
+    shouldAutoFocus: true,
     value: '',
   };
 
